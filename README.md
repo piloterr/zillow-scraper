@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.zillow.com/homedetails/20-Kyle-Ct-Staten-Island-NY-10312/32361983_zpid/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -333,7 +333,7 @@ response = requests.get(
     params={
         "query": "https://www.zillow.com/staten-island-ny/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
